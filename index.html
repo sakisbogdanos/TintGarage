@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tint Garage</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #000; color: #fff; scroll-behavior: smooth; }
+    nav { background: #111; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #f39c12; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    section { padding: 60px 20px; background: #fff; color: #000; }
+    section:nth-of-type(even) { background: #f4f4f4; }
+    section h2 { color: #f39c12; text-align: center; margin-bottom: 20px; }
+    footer { background: #000; color: #aaa; text-align: center; padding: 15px; }
+    ul { max-width: 700px; margin: auto; }
+    iframe { width: 100%; border: none; border-radius: 8px; }
+
+    /* Hero section */
+    #home {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://i.imgur.com/01YJmJI.jpeg')
+                  no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #home h1 { font-size: 3em; text-shadow: 2px 2px 5px #000; }
+    #home p { font-size: 1.5em; max-width: 600px; text-shadow: 1px 1px 3px #000; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #home h1 { font-size: 2em; }
+      #home p { font-size: 1.2em; }
+      nav a { display: block; margin: 10px 0; }
+    }
+
+    /* Hover effect */
+    .btn:hover {
+      background: #d35400;
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Πλοήγηση -->
+  <nav>
+    <a href="#home">Αρχική</a>
+    <a href="#services">Υπηρεσίες</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Επικοινωνία</a>
+  </nav>
+
+  <!-- Αρχική -->
+  <section id="home">
+    <h1>Tint Garage</h1>
+    <p>Προστασία, άνεση και στυλ - όλα σε μία μεμβράνη.</p>
+  </section>
+
+  <!-- Υπηρεσίες -->
+  <section id="services">
+    <h2>Οι Υπηρεσίες μας</h2>
+    <ul style="text-align:justify; list-style-type:disc; padding-left:20px;">
+      <li><strong>Τοποθέτηση αντηλιακών μεμβρανών</strong></li>
+      <li><strong>Αντικατάσταση / Αφαίρεση παλιών μεμβρανών</strong></li>
+      <li><strong>Άψογη εφαρμογή χωρίς φουσκώματα</strong></li>
+      <li><strong>Εγγύηση ποιότητας και αντοχής, εφ' όρου ζωής</strong></li>
+    </ul>
+
+    <!-- Γιατί να μας επιλέξετε -->
+    <h2 style="margin-top:40px; text-align:center;">Γιατί να μας επιλέξετε</h2>
+    <ul style="max-width:700px; margin:auto; text-align:justify; list-style:none; padding:0;">
+      <li>✔️ Προστασία από UV ακτινοβολία έως 99%</li>
+      <li>✔️ Μείωση θερμοκρασίας στο εσωτερικό του αυτοκινήτου</li>
+      <li>✔️ Κομψή εμφάνιση και ενίσχυση της αισθητικής του οχήματος</li>
+      <li>✔️ Εγγύηση ποιότητας με διάρκεια ζωής</li>
+      <li>✔️ Εξοικονόμηση ενέργειας με μειωμένη χρήση κλιματισμού</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Επιλογές μεμβράνης</h2>
+    <figure style="text-align:center;">
+      <img src="https://i.imgur.com/4hhQQl6.jpeg" 
+           alt="Είδη φιμέ Tint Garage" 
+           style="max-width:100%; border-radius:8px;">
+      <figcaption style="margin-top:10px; font-style:italic; color:#555;">
+        Επιλογές μεμβράνης για κάθε ανάγκη: από διακριτικό έως απόλυτη ιδιωτικότητα
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Επικοινωνία -->
+  <section id="contact">
+    <h2>Επικοινωνία</h2>
+    <p style="text-align:center;">
+      <strong>Διεύθυνση:</strong> 25ης Μαρτίου 33, Πετρούπολη, Ελλάδα<br>
+      <strong>Τηλέφωνα:</strong> 6979813816, 6939215390<br>
+      <strong>Email:</strong> <a href="mailto:sakisbogdanos@gmail.com">sakisbogdanos@gmail.com</a><br>
+      <strong>Ώρες Λειτουργίας:</strong> Καθημερινές: 09:00 – 17:00 | Σάββατο: 09:00 – 13:30 | Κυριακή: Κλειστά
+    </p>
+    
+    <!-- Google Maps embed με pin -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1688.4192254844127!2d23.675785273568412!3d38.04410873105954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a382bad5675d%3A0xb68e91e59b713a8a!2zMjXOt8-CIM6czrHPgc-Ezq_Ov8-FIDMzLCDOoM61z4TPgc6_z43PgM6_zrvOtyAxMzIgMzE!5e0!3m2!1sel!2sgr!4v1761658887284!5m2!1sel!2sgr" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- Υποσέλιδο -->
+  <footer>
+    <p>&copy; 2025 Tint Garage</p>
+  </footer>
+
+</body>
+</html>
